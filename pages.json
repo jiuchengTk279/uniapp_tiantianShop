@@ -28,7 +28,9 @@
         }
         ,{
             "path" : "pages/pics/pics",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText":"社区图片"
+			}
         }
         ,{
             "path" : "pages/videos/videos",

@@ -1,6 +1,6 @@
 <template>
 	<view class="goods_list">
-		<goodsList :goodsList="goodsList"></goodsList>
+		<goodsList :goodsList="goodsList" @itemClick="goGoodsDetail"></goodsList>
 		<view class="isOver" v-if="flag">-----我是有底线的-----</view>
 	</view>
 </template>
@@ -50,6 +50,12 @@
 				// 进行数据的拼接，将老数据与响应获得的数据进行拼接
 				this.goodsList = [...this.goodsList,...res.data.message]
 				callback && callback()
+			},
+			// 导航到商品详情页
+			goGoodsDetail(id) {
+				uni.navigateTo({
+					url: '/pages/goods-detail/goods-detail?id=' + id
+				})
 			}
 		}
 	}

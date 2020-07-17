@@ -266,6 +266,12 @@ var _goodsList = _interopRequireDefault(__webpack_require__(/*! ../../components
       uni.navigateTo({
         url: url });
 
+    },
+    // 导航到商品详情页
+    goGoodsDetail: function goGoodsDetail(id) {
+      uni.navigateTo({
+        url: '/pages/goods-detail/goods-detail?id=' + id });
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
@@ -405,8 +411,10 @@ var _default =
 
 
   },
-  methods: {},
-
+  methods: {
+    goDetail: function goDetail(id) {
+      this.$emit('itemClick', id);
+    } },
 
   props: ['goodsList'] };exports.default = _default;
 

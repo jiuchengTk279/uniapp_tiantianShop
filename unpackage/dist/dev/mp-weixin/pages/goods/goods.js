@@ -136,8 +136,10 @@ var _default =
 
 
   },
-  methods: {},
-
+  methods: {
+    goDetail: function goDetail(id) {
+      this.$emit('itemClick', id);
+    } },
 
   props: ['goodsList'] };exports.default = _default;
 
@@ -354,6 +356,12 @@ var _goodsList = _interopRequireDefault(__webpack_require__(/*! ../../components
                 // 进行数据的拼接，将老数据与响应获得的数据进行拼接
                 _this2.goodsList = [].concat(_toConsumableArray(_this2.goodsList), _toConsumableArray(res.data.message));
                 callback && callback();case 5:case "end":return _context.stop();}}}, _callee);}))();
+    },
+    // 导航到商品详情页
+    goGoodsDetail: function goGoodsDetail(id) {
+      uni.navigateTo({
+        url: '/pages/goods-detail/goods-detail?id=' + id });
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

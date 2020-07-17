@@ -1,0 +1,56 @@
+.goods-detail swiper {
+  height: 700rpx;
+}
+.goods-detail swiper image {
+  width: 100%;
+  height: 100%;
+}
+.goods-detail .box1 {
+  padding: 10px;
+}
+.goods-detail .box1 .price {
+  font-size: 35rpx;
+  color: #b50e03;
+  line-height: 80rpx;
+}
+.goods-detail .box1 .price text:nth-child(2) {
+  color: #ccc;
+  font-size: 28rpx;
+  text-decoration: line-through;
+  margin-left: 20rpx;
+}
+.goods-detail .box1 .goods_name {
+  font-size: 32rpx;
+  line-height: 60rpx;
+}
+.goods-detail .box2 {
+  padding: 0 10px;
+  font-size: 32rpx;
+  line-height: 70rpx;
+}
+.goods-detail .box3 {
+  padding-bottom: 50px;
+}
+.goods-detail .box3 .title {
+  font-size: 32rpx;
+  padding-left: 10px;
+  border-bottom: 1px solid #eee;
+  line-height: 70rpx;
+}
+.goods-detail .box3 .content {
+  padding: 10px;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 50rpx;
+}
+.goods_nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.line {
+  height: 10rpx;
+  width: 750rpx;
+  background: #eee;
+}
+

@@ -136,8 +136,10 @@ var _default =
 
 
   },
-  methods: {},
-
+  methods: {
+    goDetail: function goDetail(id) {
+      this.$emit('itemClick', id);
+    } },
 
   props: ['goodsList'] };exports.default = _default;
 

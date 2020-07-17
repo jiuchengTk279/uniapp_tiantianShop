@@ -47,7 +47,7 @@
 					</view>
 				</view>
 			</view> -->
-			<goodsList :goodsList="goodsList"></goodsList>
+			<goodsList :goodsList="goodsList" @itemClick="goGoodsDetail"></goodsList>
 		</view>
 	</view>
 </template>
@@ -127,6 +127,12 @@
 				// console.log(url)
 				uni.navigateTo({
 					url
+				})
+			},
+			// 导航到商品详情页
+			goGoodsDetail(id){
+				uni.navigateTo({
+					url: '/pages/goods-detail/goods-detail?id=' + id
 				})
 			}
 		}

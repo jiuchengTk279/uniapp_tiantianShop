@@ -4,12 +4,13 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": false
+    "urlCheck": false,
+    "postcss": false
   },
   "compileType": "miniprogram",
   "libVersion": "",
-  "appid": "touristappid",
-  "projectname": "uniapp_shop",
+  "appid": "wxcdb41bf5acb15cd4",
+  "projectname": "天天商城",
   "condition": {
     "search": {
       "current": -1,

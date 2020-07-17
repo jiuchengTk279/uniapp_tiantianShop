@@ -8,7 +8,8 @@
     "pages/contact/contact",
     "pages/pics/pics",
     "pages/videos/videos",
-    "components/goods-list/goods-list"
+    "components/goods-list/goods-list",
+    "pages/news-detail/news-detail"
   ],
   "subPackages": [],
   "window": {

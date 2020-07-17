@@ -40,6 +40,10 @@
             "path" : "components/goods-list/goods-list",
             "style" : {}
         }
+        ,{
+            "path" : "pages/news-detail/news-detail",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
